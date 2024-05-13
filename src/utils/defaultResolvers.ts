@@ -13,7 +13,7 @@ export const resolveInvalidNumber = (
   const number = Number(value)
 
   const isValidNumber =
-    !isNaN(number) && number >= inclusiveMin && number <= inclusiveMax
+    !isNaN(number) && number >= inclusiveMin && number < inclusiveMax
 
   return isValidNumber ? number : fallback
 }
